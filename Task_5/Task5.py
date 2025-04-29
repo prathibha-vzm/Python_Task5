@@ -109,6 +109,6 @@ print("The fibonacci series")
 #using lambda and tuple to return values
 fibonacci_lambda= lambda a,b:(b,a+b)
 #for loop to run upto n
-for n in range(fibonacci_input):
+for count in range(fibonacci_input):
         num1,num2=fibonacci_lambda(num1,num2) #return the value
         print(num1,end=" ")
