@@ -101,14 +101,14 @@ print("Current Year",year_lambda(D))
 print("\nQuestion 6")
 print("Enter your input")
 #getting input as integer
-fib_input=int(input())
+fibonacci_input=int(input())
 #defining values to the var
-t1=0
-t2=1
+num1=0
+num2=1
 print("The fibonacci series")
 #using lambda and tuple to return values
-fib_lambda= lambda a,b:(b,a+b)
+fibonacci_lambda= lambda a,b:(b,a+b)
 #for loop to run upto n
-for n in range(fib_input):
-        t1,t2=fib_lambda(t1,t2) #return the value
-        print(t1,end=" ")
+for n in range(fibonacci_input):
+        num1,num2=fibonacci_lambda(num1,num2) #return the value
+        print(num1,end=" ")
