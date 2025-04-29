@@ -2,7 +2,6 @@ from functools import reduce
 import re
 import datetime
 
-
 '''QUESTION 1: List of Dictionaries, each representing name and age Keys, 
 use Lambda function to filter out people under 18 and map the remaining peoples in a new list'''
 print("Question 1")
@@ -16,7 +15,6 @@ list_dict=[{"name":"Ambi",'age':20},
 
 #using Lambda function to filter out people under 18 and map the remaining peoples in a new list
 remaining_people=(list(map(lambda name:name["name"],filter(lambda above:above['age']>18,list_dict))))
-
 #output
 print("People Above 18 are: ",remaining_people)
 
@@ -26,10 +24,8 @@ print("\nQuestion 2")
 
 #list of numbers
 list_numbers=[10,34,9,55]
-
 #using the reduce function and a lambda expression to calculate the product of all the numbers in the list
 product_numbers=reduce(lambda a,b:a*b,list_numbers)
-
 #Output
 print(list_numbers)
 print("Thr product of a list of numbers: ",product_numbers)
@@ -47,7 +43,6 @@ print("Square of even numbers")
 #List = [expression(i) for i in another_list if filter(i)]
 # Using list comprehension and Lambda to check and square even numbers
 even_list=[eve**2 for eve in alist if(lambda eve:eve%2==0)(eve)]
-
 #output
 print(even_list)
 
