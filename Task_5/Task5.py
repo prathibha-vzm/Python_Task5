@@ -44,7 +44,7 @@ print("Square of even numbers")
 
 #List = [expression(i) for i in another_list if filter(i)]
 # Using list comprehension and Lambda to check and square even numbers
-even_list=[eve**2 for eve in alist if(lambda eve:eve%2==0)(eve)]
+even_list=[even_num**2 for even_num in alist if(lambda even_num:even_num%2==0)(even_num)]
 #output
 print(even_list)
 
@@ -53,15 +53,15 @@ print(even_list)
 print("\nQuestion 4")
 
 #getting input
-var="@ustron1ut"
+in_put="@ustron1ut"
 
-print(var)
+print(in_put)
 
 #Using filter with lambda and regex to find the numbers in a string
-filter_var=filter(lambda char:re.findall("[0-9]",char),var)
+filter_find=filter(lambda char:re.findall("[0-9]",char),in_put)
 
 #converting the function to list
-filter_list=list(filter_var)
+filter_list=list(filter_find)
 
 #to check if there is a number in the list
 if filter_list:
@@ -84,17 +84,17 @@ print("current date",date_lambda(date))
 #Question 5:
 print("\nQuestion 5")
 #Use lambda function to extract date month and year from datetime object
-D=datetime.datetime.now()
+Date=datetime.datetime.now()
 
 #Here used lambda to extract day, month and year in separate
-da_lambda=lambda da:da.day #returns date
+day_lambda=lambda da:da.day #returns date
 month_lambda=lambda dm:dm.month #returns month
 year_lambda=lambda dy:dy.year #returns year
 
 #passing current date and printing
-print("Current date:",da_lambda(D))
-print("Current month:",month_lambda(D))
-print("Current Year",year_lambda(D))
+print("Current date:",day_lambda(Date))
+print("Current month:",month_lambda(Date))
+print("Current Year",year_lambda(Date))
 
 '''Question 6:Create a lambda function to generate fibonacci series upto n terms'''
 
